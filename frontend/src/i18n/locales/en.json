@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "Chance Player"
+  },
+  "nav": {
+    "home": "Home",
+    "coin": "Coin",
+    "dice": "Dice",
+    "card": "Card",
+    "number": "Number"
+  },
+  "home": {
+    "subtitle": "Your personal randomizer"
+  },
+  "coin": {
+    "title": "Coin Flip",
+    "flip": "Flip Coin",
+    "flip3": "Flip 3 Coins",
+    "iching": "I Ching Consultation",
+    "consult": "Consult",
+    "result": {
+      "heads": "Heads",
+      "tails": "Tails"
+    },
+    "line": "Line",
+    "sum": "Sum",
+    "lineTypes": {
+      "old_yin": "Old Yin (changing)",
+      "young_yang": "Young Yang (stable)",
+      "young_yin": "Young Yin (stable)",
+      "old_yang": "Old Yang (changing)"
+    }
+  },
+  "dice": {
+    "title": "Dice Roll",
+    "roll": "Roll",
+    "roll2": "Roll 2d6",
+    "roll3": "Roll 3d6",
+    "sum": "Sum"
+  },
+  "card": {
+    "title": "Draw Card",
+    "draw": "Draw",
+    "suits": {
+      "hearts": "Hearts",
+      "diamonds": "Diamonds",
+      "spades": "Spades",
+      "clubs": "Clubs"
+    },
+    "suitEmoji": {
+      "hearts": "♥",
+      "diamonds": "♦",
+      "spades": "♠",
+      "clubs": "♣"
+    }
+  },
+  "number": {
+    "title": "Random Number",
+    "generate": "Generate",
+    "range": "Range"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "result": "Result"
+  }
+}
