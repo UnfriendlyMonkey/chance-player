@@ -1,0 +1,37 @@
+# Claude Code
+.claude/
+
+# Dependencies
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+
+# Go binaries
+backend/ip-converter
+backend/ip-converter-api
+
+# Deployment notes (local only)
+DEPLOY.md
+example.go
+todo.md
+
+# Env files (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+frontend/.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
