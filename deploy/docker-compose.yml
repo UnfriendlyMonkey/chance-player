@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: ../backend
+      dockerfile: ../deploy/Dockerfile.api
+    ports:
+      - "8081:8080"   # 8081 on host to avoid conflict with other apps using 8080
+    environment:
+      - ENV=production
+      - HTTP_PORT=8080
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "/api"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  bot:
+    build:
+      context: ../backend
+      dockerfile: ../deploy/Dockerfile.bot
+    environment:
+      - ENV=production
+      - BOT_TOKEN=${BOT_TOKEN}
+    restart: unless-stopped
+    depends_on:
+      - api
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    ports:
+      - "3001:80"   # 3001 on host; ip-converter uses 3000
+    restart: unless-stopped
+    depends_on:
+      - api
